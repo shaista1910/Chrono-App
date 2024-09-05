@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/helloTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Hello Again!"
+            android:textColor="@color/white"
+            android:fontFamily="@font/habibi"
+            android:textSize="36dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/signInTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Sign into your account"
+            android:textColor="@color/lightGrey"
+            android:fontFamily="@font/habibi"
+            android:textSize="20sp" />
+
+
+
+        <EditText
+            android:id="@+id/emailTxtBox"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="20dp"
+            android:hint="Email"
+            android:paddingHorizontal="20dp"
+            android:fontFamily="@font/habibi"
+            android:textColorHint="@color/lightGrey"
+            android:textColor="@color/lightGrey"
+            android:background="@drawable/roundstyle"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/passwordTxtBox"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="20dp"
+            android:hint="Password"
+            android:paddingHorizontal="20dp"
+            android:fontFamily="@font/habibi"
+            android:textColorHint="@color/lightGrey"
+            android:textColor="@color/lightGrey"
+            android:background="@drawable/roundstyle"
+            android:inputType="textPassword" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginBttn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="20dp"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:background="@drawable/gradientbttn"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:text="Don't have an account?"
+                android:textColor="@color/lightGrey"
+                android:fontFamily="@font/habibi"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/signUpBttn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00FFFFFF"
+                android:text="Sign up here"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/habibi"
+                android:textColor="#00DA9A"
+                android:textAllCaps="false"
+                style="?android:attr/borderlessButtonStyle"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

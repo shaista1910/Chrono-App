@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".Welcome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:gravity="center"
+            android:text="Welcome to"
+            android:textColor="@color/white"
+            android:fontFamily="@font/habibi"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="35dp"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/logoImgView"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/logo" />
+
+
+            <ImageView
+                android:id="@+id/appImgView"
+                android:layout_width="140dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/app" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/welcomeMssg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:gravity="center"
+                android:text="Welcome to Chrono, your ultimate timesheet companion! Get ready to streamline your time tracking and maximize productivity. With Chrono, you can effortlessly track and manage your working hours, projects, and tasks. Say goodbye to manual timesheets and let Chrono handle the timekeeping for you."
+                android:textColor="#95FFFFFF"
+                android:typeface="sans"
+                android:layout_marginBottom="35dp"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="center"
+                android:text="Login Here!"
+                android:id="@+id/loginBttn"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_gravity="center"
+                android:text="Register Here!"
+                android:id="@+id/registerBttn"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

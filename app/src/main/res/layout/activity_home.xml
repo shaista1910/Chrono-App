@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/darkBlue"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/menuBttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-15dp"
+            android:layout_marginTop="-15dp"
+            android:backgroundTint="@color/darkBlue"
+            android:src="@drawable/menuicon"
+            app:cornerRadius="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-15dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="My Timesheet Entries"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/startDateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Date"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="@color/cyan"
+                android:textColor="@color/darkBlue"/>
+
+            <Button
+                android:id="@+id/endDateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End Date"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="@color/cyan"
+                android:textColor="@color/darkBlue"/>
+
+            <Button
+                android:id="@+id/filterBttn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filter"
+                android:backgroundTint="@color/cyan"
+                android:textColor="@color/darkBlue"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/entriesList"
+            android:layout_width="match_parent"
+            android:layout_height="500dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/createEntryBttn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_gravity="center"
+        android:text="Create a Timesheet Entry"
+        android:textColor="@color/darkBlue"
+        android:background="@drawable/createbttn"/>
+</LinearLayout>

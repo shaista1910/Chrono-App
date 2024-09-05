@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menubkg"
+    tools:context=".Menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:id="@+id/loginText"
+        android:layout_marginTop="20dp"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/homeBttn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="20dp"
+        android:text="Home"
+        android:textColor="@color/darkBlue"
+        android:background="@drawable/createbttn"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/myCatBttn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="20dp"
+            android:text="My Categories"
+            android:textColor="@color/darkBlue"
+            android:background="@drawable/createbttn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/catBttn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="20dp"
+        android:text="Create a Category"
+        android:textColor="@color/darkBlue"
+        android:background="@drawable/createbttn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/timesheetBttn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="20dp"
+        android:text="Create a Timesheet"
+        android:textColor="@color/darkBlue"
+        android:background="@drawable/createbttn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/prodBttn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="20dp"
+        android:text="Productivity Report"
+        android:textColor="@color/darkBlue"
+        android:background="@drawable/createbttn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/timerBttn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="20dp"
+        android:text="Timer"
+        android:textColor="@color/darkBlue"
+        android:background="@drawable/createbttn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logoutBttn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="20dp"
+        android:text="Logout"
+        android:textColor="@color/darkBlue"
+        android:background="@drawable/createbttn"/>
+
+
+    </LinearLayout>
+</LinearLayout>

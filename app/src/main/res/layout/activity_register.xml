@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registerbckg"
+    tools:context=".Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="590dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/getStartedTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:layout_marginStart="16dp"
+            android:text="Get started free"
+            android:textColor="@color/white"
+            android:fontFamily="@font/habibi"
+            android:textSize="36dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/signInTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Free forever. No credit card needed."
+            android:textColor="@color/lightGrey"
+            android:fontFamily="@font/habibi"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/emailTxtBox"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="20dp"
+            android:hint="Email"
+            android:paddingHorizontal="20dp"
+            android:fontFamily="@font/habibi"
+            android:textColorHint="@color/lightGrey"
+            android:textColor="@color/lightGrey"
+            android:background="@drawable/roundstyle"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/passwordTxtBox"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="20dp"
+            android:hint="Password"
+            android:paddingHorizontal="20dp"
+            android:fontFamily="@font/habibi"
+            android:textColorHint="@color/lightGrey"
+            android:textColor="@color/lightGrey"
+            android:background="@drawable/roundstyle"
+            android:inputType="textPassword" />
+        <EditText
+            android:id="@+id/confPassTxtBox"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="20dp"
+            android:hint="Confirm Password"
+            android:paddingHorizontal="20dp"
+            android:fontFamily="@font/habibi"
+            android:textColorHint="@color/lightGrey"
+            android:textColor="@color/lightGrey"
+            android:background="@drawable/roundstyle"
+            android:inputType="textPassword" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registerBttn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="20dp"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:background="@drawable/gradientbttn"/>
+
+        <TextView
+            android:id="@+id/orTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="OR"
+            android:layout_gravity="center"
+            android:textColor="@color/lightGrey"
+            android:fontFamily="@font/habibi"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+
+            <ImageButton
+                android:id="@+id/googleBttn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#00FFFFFF"
+                android:text="Sign up here"
+                android:src="@drawable/googlelogo"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/habibi"
+                android:textColor="#00DA9A"
+                android:textAllCaps="false"
+                style="?android:attr/borderlessButtonStyle"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:text="Already have an account?"
+                android:textColor="@color/lightGrey"
+                android:fontFamily="@font/habibi"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/loginBttn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00FFFFFF"
+                android:text="Login here"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/habibi"
+                android:textColor="#00DA9A"
+                android:textAllCaps="false"
+                style="?android:attr/borderlessButtonStyle"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
